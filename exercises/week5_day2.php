@@ -6,9 +6,11 @@
     <title>PHP Practice Page 2</title>
 </head>
 <body>
+    <form action="week5_day3.php" method="post">    
     <h1>PHP Exercises 2: Electric Boogaloo</h1>
     <h2>Constants, Operators, Conditionals</h2>
     <?php
+        echo("hi ");
         $newline = "<br>";
         define("Stefansson", "Number 1");
         echo("Stefan Karl Stefansson");
@@ -180,6 +182,8 @@
             echo "$leader leads $house \n";
         }
         echo $newline;
+        echo ("If this page of gibberish is proof enough for you, please click continue");
     ?>
+    <input type="submit" value="continue">
 </body>
 </html>
