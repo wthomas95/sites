@@ -13,9 +13,13 @@ $karma_name = "Karma";
 $karma_value = "neutral";
 setcookie($karma_name, $karma_value, time() +(86400*30), "/");
 ?>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>William's PHP practice</title>
+</head>
 <body>
-    <form action="week5_day3.php" method="post">
+    <form action="index.php" method="post">
     <?php require 'header.php'?>
     <h1>Information<h1>
         <?php
