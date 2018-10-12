@@ -1,4 +1,4 @@
-<?php include './exercises/header.php'?>
+<?php include 'header.php'?>
   <body>
     <form action="week5_day2.php" method="post">
       <h1>PHP Exercises</h1>

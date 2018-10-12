@@ -1,4 +1,4 @@
-<?php require './exercises/header.php';?>  
+<?php require 'header.php';?>  
 <body>
     <form action="website.php" method="post">  
     <h1>PHP Exercises 2: Electric Boogaloo</h1>
