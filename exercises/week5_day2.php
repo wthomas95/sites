@@ -6,11 +6,11 @@
     <title>PHP Practice Page 2</title>
 </head>
 <body>
-    <form action="website.php" method="post">    
+    <form action="website.php" method="post">  
+    <?php require 'header.php';?>  
     <h1>PHP Exercises 2: Electric Boogaloo</h1>
     <h2>Constants, Operators, Conditionals</h2>
     <?php
-        require 'header.php';
         echo("hi ");
         $newline = "<br>";
         define("Stefansson", "Number 1");
