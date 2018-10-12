@@ -10,6 +10,7 @@
     <h1>PHP Exercises 2: Electric Boogaloo</h1>
     <h2>Constants, Operators, Conditionals</h2>
     <?php
+        require 'header.php';
         echo("hi ");
         $newline = "<br>";
         define("Stefansson", "Number 1");
@@ -183,5 +184,7 @@
         echo ("If this page of gibberish is proof enough for you, please click continue");
     ?>
     <input type="submit" value="continue">
+    <br>
+    <?php include 'datetime.php'?>
 </body>
 </html>

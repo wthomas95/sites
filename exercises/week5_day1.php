@@ -5,6 +5,7 @@
   </head>
   <body>
     <form action="week5_day2.php" method="post">
+    <?php require 'header.php';?>
       <h1>PHP Exercises</h1>
       <h2>Scope Changes and the Global Keyword</h2>
       <?php
@@ -30,7 +31,6 @@
         echo $newline;
         echo $newline;
         $float = 3.14159;
-        $bool = false;
         $list = array(1, 2, 3, 4, 5);
         class Car{
           public $make = 'toyota';
@@ -44,13 +44,15 @@
         echo $float;
         echo $newline;
         echo $newline;
+        $bool = false;
         function T_F()
         {
           $ans = "hi";
+          global $bool;
           if ($bool == true){
             $ans = "this statement is true";
           }
-          else if ($bool == false){
+          else {
             $ans = "this statement is false";
           }
           echo $ans;
@@ -103,4 +105,5 @@
         echo ("If this page of gibberish is proof enough for you, please click continue");
         ?>
         <input type="submit" value="continue">
+        <?php include 'datetime.php'?>
   </body>

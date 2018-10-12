@@ -2,6 +2,6 @@
 <html lang="en">
 </head>
     <body>
-        <h1>User Data Page</h1>
+        <h1>William's PHP Practice Pages</h1>
     </body>
 </html>
