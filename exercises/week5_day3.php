@@ -1,8 +1,29 @@
+<?php
+setcookie("test_cookie", "test", time() + 3600, '/');
+$first_name = "First";
+$first_value = "John";
+setcookie($first_name, $first_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+$last_name = "Last";
+$last_value = "Doe";
+setcookie($last_name, $last_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+$age_name = "Age";
+$age_value = "30";
+setcookie($age_name, $age_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+$karma_name = "Karma";
+$karma_value = "neutral";
+setcookie($karma_name, $karma_value, time() +(86400*30), "/");
+?>
 <html>
 <body>
     <form action="week5_day3.php" method="post">
     <?php require 'header.php'?>
     <h1>Information<h1>
+        <?php
+        $valid = [0, 0, 0];
+        if($valid[0] == 1 && $valid[1] == 1 && $valid[2] == 1){
+            header("Location: week5_day1.php");
+        }
+        ?>
         First name: <br>
         <input type="text" name="first" value=""><br>
         <?php
@@ -13,9 +34,9 @@
                     $L_errors = '<font color="red">Name must only contain letters!</font>';
                     echo $L_errors;
                 }
-                else
-                {
-                    echo "Welcome $first $last"
+                else{
+                    setcookie($first_name, $first, time() + (86400 * 30), "/"); // 86400 = 1 day
+                    $valid[0] = 1;
                 }
             }
         ?>
@@ -31,6 +52,10 @@
                     $L_errors = '<font color="red">Name must only contain letters!</font>';
                     echo $L_errors;
                 }
+                else{
+                    setcookie($last_name, $last, time() + (86400 * 30), "/"); // 86400 = 1 day
+                    $valid[1] = 1;
+                }
             }
         ?>
         <br>
@@ -44,12 +69,32 @@
                     $N_errors = '<font color="red">Age must only contain numbers!</font>';
                     echo $N_errors;
                 }
+                else{
+                    setcookie($age_name, $age, time() + (86400 * 30), "/"); // 86400 = 1 day
+                    $valid[2] = 1;
+                }
             }
+            if($valid[0] == 1 && $valid[1] == 1 && $valid[2] == 1){
+                header("Location: week5_day1.php");
+            }
+            
         ?>
         <br>
-        <input type="radio" name="karma" value="villain">villain
-        <input type="radio" name="karma" value="neutral">neutral
-        <input type="radio" name="karma" value="hero">hero
+        Karmic Balance:<br>
+        <input type="radio" name="karma" value="villainous">villain<br>
+        <input type="radio" name="karma" value="neutral">neutral<br>
+        <input type="radio" name="karma" value="heroic">hero<br>
+        <?php
+            if(isset($_POST["karma"])){
+                $karma = $_POST["karma"];
+                if($_POST['list'] == -1){
+                echo 'Please select one on the List';
+                }
+                else {
+                    setcookie($karma_name, $karma, time() + (86400 * 30), "/"); // 86400 = 1 day
+                }
+            }
+        ?>
         <br>
         <br>
       <input type="submit" value="Confirm">

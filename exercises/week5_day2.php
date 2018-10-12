@@ -6,7 +6,7 @@
     <title>PHP Practice Page 2</title>
 </head>
 <body>
-    <form action="week5_day3.php" method="post">    
+    <form action="website.php" method="post">    
     <h1>PHP Exercises 2: Electric Boogaloo</h1>
     <h2>Constants, Operators, Conditionals</h2>
     <?php
@@ -17,8 +17,6 @@
         echo $newline;
         echo(Stefansson);
 
-
-        
         $num1 = 10;
         $num2 = 5;
         $res = 15;

@@ -4,6 +4,7 @@
     <title>PHP practice page</title>
   </head>
   <body>
+    <form action="week5_day2.php" method="post">
       <h1>PHP Exercises</h1>
       <h2>Scope Changes and the Global Keyword</h2>
       <?php
@@ -99,5 +100,7 @@
         echo ("<strong>This replaces 'false' with 'true' in the string</strong>");
         echo $newline;
         echo str_replace("false", "true", "this statement is false");
-      ?>
+        echo ("If this page of gibberish is proof enough for you, please click continue");
+        ?>
+        <input type="submit" value="continue">
   </body>
