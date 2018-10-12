@@ -21,7 +21,7 @@ setcookie($karma_name, $karma_value, time() +(86400*30), "/");
         <?php
         $valid = [0, 0, 0];
         if($valid[0] == 1 && $valid[1] == 1 && $valid[2] == 1){
-            header("Location: week5_day1.php");
+            header("Location: ./exercises/week5_day1.php");
         }
         ?>
         First name: <br>
@@ -100,7 +100,7 @@ setcookie($karma_name, $karma_value, time() +(86400*30), "/");
       <input type="submit" value="Confirm">
       <br>
       <br>
-      <?php include 'datetime.php'?>
+      <?php include './exercises/datetime.php'?>
     </form>
 </body>
 </html>
