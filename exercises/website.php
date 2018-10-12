@@ -7,7 +7,7 @@
   </head>
   <body>
     <?php 
-      require './exercises/header.php';
+      require 'header.php';
       echo ("<h1>Thanks for looking at my quick php demonstrations, " . $_COOKIE["First"] . ". We saved your info with cookies for the day, and remember that you are  " . $_COOKIE["First"] . "  " . $_COOKIE["Last"] . ". A  " . $_COOKIE["Age"] . " year old " . $_COOKIE["Karma"] . ". Have a great day</h1>");
       include 'datetime.php';
       ?>
