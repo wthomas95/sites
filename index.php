@@ -14,7 +14,7 @@ $karma_value = "neutral";
 setcookie($karma_name, $karma_value, time() +(86400*30), "/");
 ?>
 
-<?php require 'header.php'?>
+<?php include './exercises/header.php'?>
 <body>
     <form action="index.php" method="post">
 
