@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>PHP practice page</title>
-  </head>
+<?php include './exercises/header.php'?>
   <body>
     <form action="week5_day2.php" method="post">
-    <?php require './exercises/header.php';?>
       <h1>PHP Exercises</h1>
       <h2>Scope Changes and the Global Keyword</h2>
       <?php
