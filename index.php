@@ -76,7 +76,7 @@ setcookie($karma_name, $karma_value, time() +(86400*30), "/");
                 }
             }
             if($valid[0] == 1 && $valid[1] == 1 && $valid[2] == 1){
-                header("Location: week5_day1.php");
+                header("Location: .exercises/week5_day1.php");
             }
             
         ?>
