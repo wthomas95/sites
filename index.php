@@ -13,10 +13,13 @@ $karma_name = "Karma";
 $karma_value = "neutral";
 setcookie($karma_name, $karma_value, time() +(86400*30), "/");
 ?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>William's PHP practice</title>
 </head>
 <body>
