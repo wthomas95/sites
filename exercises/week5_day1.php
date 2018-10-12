@@ -7,7 +7,7 @@
   </head>
   <body>
     <form action="week5_day2.php" method="post">
-    <?php require 'header.php';?>
+    <?php require './exercises/header.php';?>
       <h1>PHP Exercises</h1>
       <h2>Scope Changes and the Global Keyword</h2>
       <?php
